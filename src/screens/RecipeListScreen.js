@@ -15,6 +15,7 @@ const RecipeListScreen = () => {
 
 		let selected = category.id === "01" ? true : false
 
+		
 
 		return categoriesArray.push({
 			...category,
