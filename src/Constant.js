@@ -481,28 +481,7 @@ export const recipeList = [
 			"Ladle the hot broth over the ingredients and get ready to enjoy your homemade ramen!",
 		],
 	},
-	{
-		id: "21",
-		categoryId: "01",
-		name: "Feast Catering",
-		image: require("../assets/images/Feast.png"),
-		rating: "4.2",
-		ingredients: ["Ramen Noodles", "Soy Sauce", "Eggs", "Vegetables"],
-		time: "35 mins",
-		difficulty: "Easy",
-		calories: "400 cal",
-		color: "#f96163",
-		description:
-			"A comforting bowl of ramen featuring slurp-worthy noodles, a savory soy sauce-based broth, tender vegetables, and perfectly boiled eggs.",
-		steps: [
-			"Boil the ramen noodles according to package instructions.",
-			"In a pot, bring water to a simmer and add soy sauce for the broth.",
-			"Add chopped vegetables and let them cook until tender.",
-			"Boil eggs to your desired doneness, then peel and slice them.",
-			"Assemble the ramen bowls by placing cooked noodles, vegetables, and egg slices.",
-			"Ladle the hot broth over the ingredients and get ready to enjoy your homemade ramen!",
-		],
-	},
+	
 	{
 		id: "22",
 		categoryId: "01",
@@ -2267,28 +2246,7 @@ export const recipeList = [
 			"Ladle the hot broth over the ingredients and get ready to enjoy your homemade ramen!",
 		],
 	},
-	{
-		id: "101",
-		categoryId: "03",
-		name: "Feast Catering",
-		image: require("../assets/images/Feast.png"),
-		rating: "4.2",
-		ingredients: ["Ramen Noodles", "Soy Sauce", "Eggs", "Vegetables"],
-		time: "35 mins",
-		difficulty: "Easy",
-		calories: "400 cal",
-		color: "#f96163",
-		description:
-			"A comforting bowl of ramen featuring slurp-worthy noodles, a savory soy sauce-based broth, tender vegetables, and perfectly boiled eggs.",
-		steps: [
-			"Boil the ramen noodles according to package instructions.",
-			"In a pot, bring water to a simmer and add soy sauce for the broth.",
-			"Add chopped vegetables and let them cook until tender.",
-			"Boil eggs to your desired doneness, then peel and slice them.",
-			"Assemble the ramen bowls by placing cooked noodles, vegetables, and egg slices.",
-			"Ladle the hot broth over the ingredients and get ready to enjoy your homemade ramen!",
-		],
-	},
+	
 	{
 		id: "102",
 		categoryId: "03",
