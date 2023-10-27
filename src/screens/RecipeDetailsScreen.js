@@ -49,7 +49,7 @@ const RecipeDetailsScreen = ({ navigation, route }) => {
 						style={{
 							width: "100%",
 							height: "100%",
-							borderRadius: 400/2,	
+							borderRadius: 300/5,	
 							resizeMode: "contain",
 						}}
 					/>
