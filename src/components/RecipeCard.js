@@ -46,8 +46,6 @@ const RecipeCard = ({ categoriesState }) => {
 					/>
 					<Text>{item.name}</Text>
 					<View style={{ flexDirection: "row", marginTop: 8 }}>
-					  <Text>{item.time}</Text>
-					  <Text> | </Text>
 					  <View style={{ flexDirection: "row" }}>
 						<Text style={{ marginRight: 4 }}>{item.rating}</Text>
 						<FontAwesome

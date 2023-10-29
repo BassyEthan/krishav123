@@ -10,6 +10,7 @@ import {
 } from "react-native";
 import React from "react";
 import { FontAwesome } from "@expo/vector-icons";
+import MapView, { Marker } from 'react-native-maps';
 
 const RecipeDetailsScreen = ({ navigation, route }) => {
 	const { item } = route.params;
@@ -87,10 +88,11 @@ const RecipeDetailsScreen = ({ navigation, route }) => {
 									width: 100,
 								}}
 							>
-								<Text style={{ fontSize: 40 }}>⏰</Text>
-								<Text style={{ fontSize: 20, fontWeight: 400 }}>
+								<Text style={{ fontSize: 40, fontWeight: 400 }}>
 									{item.time}
 								</Text>
+								<Text style={{ fontSize: 20 }}>Entrance</Text>
+								
 							</View>
 							<View
 								style={{
@@ -103,10 +105,10 @@ const RecipeDetailsScreen = ({ navigation, route }) => {
 									// marginHorizontal: 24,
 								}}
 							>
-								<Text style={{ fontSize: 40 }}>🥣</Text>
-								<Text style={{ fontSize: 20, fontWeight: 400 }}>
+								<Text style={{ fontSize: 40, fontWeight: 400 }}>
 									{item.difficulty}
 								</Text>
+								<Text style={{ fontSize: 20 }}>Interior</Text>
 							</View>
 							<View
 								style={{
@@ -118,26 +120,26 @@ const RecipeDetailsScreen = ({ navigation, route }) => {
 									width: 100,
 								}}
 							>
-								<Text style={{ fontSize: 40 }}>🔥</Text>
-								<Text style={{ fontSize: 20, fontWeight: 400 }}>
+							<Text style={{ fontSize: 40, fontWeight: 400 }}>
 									{item.calories}
 								</Text>
+								<Text style={{ fontSize: 20 }}>Parking</Text>
 							</View>
 						</View>
 
 						{/* Recipe Ingredients  */}
 
-						<View style={{ alignSelf: "flex-start", marginVertical: 22 }}>
+						<View style={{ alignSelf: "flex-start", marginVertical: 15 }}>
 							<Text
 								style={{ fontSize: 22, fontWeight: "600", marginBottom: 6 }}
 							>
-								Ingredients:
+								Entrance:
 							</Text>
 
 							{item.ingredients.map((ingredient, index) => {
 								return (
 									<View
-										style={{
+										style=	{{
 											flexDirection: "row",
 											alignItems: "center",
 											marginVertical: 4,
@@ -160,23 +162,86 @@ const RecipeDetailsScreen = ({ navigation, route }) => {
 							})}
 						</View>
 
+
 						{/* Recipe Steps */}
 
-						<View style={{ alignSelf: "flex-start", marginVertical: 22 }}>
+						<View style={{ alignSelf: "flex-start", marginVertical: 15 }}>
 							<Text
 								style={{ fontSize: 22, fontWeight: "600", marginBottom: 6 }}
 							>
-								Steps:
+								Interior:
 							</Text>
 
-							{item.steps.map((step, index) => {
+							{item.penises.map((penis, index) => {
 								return (
-									<Text
+									<View
+										style=	{{
+											flexDirection: "row",
+											alignItems: "center",
+											marginVertical: 4,
+										}}
 										key={index}
-										style={{ fontSize: 18, marginLeft: 6, marginVertical: 6 }}
-									>{`${index + 1} ) ${step}`}</Text>
+									>
+										<View
+											style={{
+												backgroundColor: "#87bfd7",
+												height: 10,
+												width: 10,
+												borderRadius: 5,
+											}}
+										></View>
+										<Text style={{ fontSize: 18, marginLeft: 6 }}>
+											{penis}
+										</Text>
+									</View>
 								);
 							})}
+						</View>
+
+						<View style={{ alignSelf: "flex-start", marginVertical: 15 }}>
+							<Text
+								style={{ fontSize: 22, fontWeight: "600", marginBottom: 6 }}
+							>
+								Parking:
+							</Text>
+
+							{item.dicks.map((dick, index) => {
+								return (
+									<View
+										style=	{{
+											flexDirection: "row",
+											alignItems: "center",
+											marginVertical: 4,
+										}}
+										key={index}
+									>
+										<View
+											style={{
+												backgroundColor: "#87bfd7",
+												height: 10,
+												width: 10,
+												borderRadius: 5,
+											}}
+										></View>
+										<Text style={{ fontSize: 18, marginLeft: 6 }}>
+											{dick}
+										</Text>
+									</View>
+								);
+							})}
+							<View style={{ alignSelf: "flex-start", marginVertical: 5 }}>
+    {/* ... Other content */}
+
+   
+</View>
+						</View>
+						<View style={{ alignSelf: "flex-start", marginVertical: 10 }}>
+							<Text style={{ fontSize: 20, marginVertical: 5 }}>
+								{item.bathroom}
+							</Text>
+							<Text style={{ fontSize: 20, marginVertical: 15 }}>
+								{item.seating}
+							</Text>
 						</View>
 					</ScrollView>
 				</View>
