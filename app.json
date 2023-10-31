@@ -18,7 +18,8 @@
       "supportsTablet": true,
       "config": {
         "googleMapsApiKey": "AIzaSyDhbrDvKRkUKiKs5-lCSn2k4z4LiKdqR-E"
-      }
+      },
+      "bundleIdentifier": "WestfieldAccessApp"
     },
     "android": {
       "adaptiveIcon": {
@@ -29,6 +30,11 @@
         "googleMaps": {
           "apiKey": "AIzaSyDhbrDvKRkUKiKs5-lCSn2k4z4LiKdqR-E"
         }
+      }
+    },
+    "extra": {
+      "eas": {
+        "projectId": "cf3f8112-6f8e-499d-95b3-debdd535037b"
       }
     }
   }
