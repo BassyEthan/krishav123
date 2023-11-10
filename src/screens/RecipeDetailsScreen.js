@@ -172,7 +172,7 @@ const RecipeDetailsScreen = ({ navigation, route }) => {
 								Interior:
 							</Text>
 
-							{item.penises.map((penis, index) => {
+							{item.interior.map((interior, index) => {
 								return (
 									<View
 										style=	{{
@@ -191,7 +191,7 @@ const RecipeDetailsScreen = ({ navigation, route }) => {
 											}}
 										></View>
 										<Text style={{ fontSize: 18, marginLeft: 6 }}>
-											{penis}
+											{interior}
 										</Text>
 									</View>
 								);
@@ -205,7 +205,7 @@ const RecipeDetailsScreen = ({ navigation, route }) => {
 								Parking:
 							</Text>
 
-							{item.dicks.map((dick, index) => {
+							{item.parking.map((parking, index) => {
 								return (
 									<View
 										style=	{{
@@ -224,7 +224,7 @@ const RecipeDetailsScreen = ({ navigation, route }) => {
 											}}
 										></View>
 										<Text style={{ fontSize: 18, marginLeft: 6 }}>
-											{dick}
+											{parking}
 										</Text>
 									</View>
 								);

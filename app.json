@@ -1,7 +1,7 @@
 {
   "expo": {
-    "name": "reci-pie",
-    "slug": "reci-pie",
+    "name": "Access Wayfinder",
+    "slug": "AccessWayfinder",
     "version": "1.0.0",
     "orientation": "portrait",
     "icon": "./assets/icon.png",
@@ -36,6 +36,7 @@
       "eas": {
         "projectId": "cf3f8112-6f8e-499d-95b3-debdd535037b"
       }
-    }
+    },
+    "owner": "krishavs1"
   }
 }
