@@ -47,7 +47,9 @@ const RecipeDetailsScreen = ({ navigation, route }) => {
 				>
 					<Image
 						source={item.image}
+						resizeMode={"contain"}
 						style={{
+							resizeMode: "contain",
 							width: "100%",
 							height: "100%",
 							borderRadius: 300/5,	
