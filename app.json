@@ -1,42 +1,35 @@
 {
   "expo": {
-    "name": "Access Wayfinder",
-    "slug": "AccessWayfinder",
-    "version": "1.0.0",
+    "name": "access-wayfinder",
+    "slug": "access-wayfinder",
+    "version": "1.0.2",
     "orientation": "portrait",
     "icon": "./assets/icon.png",
-    "userInterfaceStyle": "light",
-    "splash": {
-      "image": "./assets/splash.png",
-      "resizeMode": "contain",
-      "backgroundColor": "#ffffff"
-    },
     "assetBundlePatterns": [
       "**/*"
     ],
     "ios": {
       "supportsTablet": true,
-      "config": {
-        "googleMapsApiKey": "AIzaSyDhbrDvKRkUKiKs5-lCSn2k4z4LiKdqR-E"
-      },
-      "bundleIdentifier": "WestfieldAccessApp"
+      "bundleIdentifier": "com.krishavs1.accesswayfinder",
+      "buildNumber": "1.0.7",
+       "CFBundleDisplayName": "MyAW"
     },
     "android": {
-      "adaptiveIcon": {
-        "foregroundImage": "./assets/adaptive-icon.png",
-        "backgroundColor": "#ffffff"
-      },
-      "config": {
-        "googleMaps": {
-          "apiKey": "AIzaSyDhbrDvKRkUKiKs5-lCSn2k4z4LiKdqR-E"
-        }
-      }
+      "package": "com.krishavs1.accesswayfinder",
+      "versionCode": 1
+    },
+    "runtimeVersion": {
+      "policy": "appVersion"
+    },
+    "updates": {
+      "fallbackToCacheTimeout": 0,
+      "url": "https://u.expo.dev/dc9451d4-7aad-4523-a7b9-15673a7c2308"
     },
     "extra": {
       "eas": {
-        "projectId": "cf3f8112-6f8e-499d-95b3-debdd535037b"
+        "projectId": "dc9451d4-7aad-4523-a7b9-15673a7c2308"
       }
-    },
-    "owner": "krishavs1"
+    }
   }
 }
+
