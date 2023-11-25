@@ -13,44 +13,63 @@ const AboutUs = () => {
 
   return (
     <ScrollView contentContainerStyle={styles.container}>
-      <Text style={styles.header}>About Us</Text>
+      <TouchableOpacity
+        style={styles.arrowButton}
+        onPress={navigateBack}
+      >
+        {/* Unicode arrow character */}
+        <View style={styles.circle}>
+            {/* Unicode arrow character */}
+            <Text style={styles.arrowText}>{'\u2190'}</Text>
+          </View>
+      </TouchableOpacity>
+
+      <View>
+        <Text style={styles.header}>About Us</Text>
+      </View>
 
       <View style={styles.textBox}>
         <Text style={styles.subHeader}>Our Work</Text>
         <Text style={styles.paragraph}>
-          Meet Krishav Singla and Ethan Lung, the minds behind Access Wayfinder. Krishav, a senior at Union County Magnet High School, and Ethan, a junior at the Union County Vocational Technical School, teamed up to create an app addressing accessibility challenges.
-        </Text>
-        <Text style={styles.paragraph}>
-          Inspired by Krishav's personal encounters, the duo conducted surveys and interviewed 130 businesses in Westfield. Collaborating with Mayor Brindey, they categorized data into sections like Restaurants, Fashion, and more. Using React-Native, they developed a user-friendly app for iOS and Android.
-        </Text>
-        <Text style={styles.paragraph}>
-          The app allows users to explore businesses, providing ratings and key accessibility details. In the demo, a welcome screen leads users to select categories and businesses of interest. The future vision includes expanding to other towns globally. Thank you for joining us on our mission to enhance accessibility for everyone.
-        </Text>
-      </View>
+         Our goal is to raise awareness towards accessibility by providing easy access to accessibility information that is usually unknown to the public until they actually visit the store, and using the platform as a way to inspire businesses to do all they can to include everyone.
+       </Text>
+       <Text style={styles.paragraph}>
+         The Access Wayfinder team is spearheaded by Krishav Singla, a Westfield resident and current high school senior. Inspired by his personal encounters with his wheelchair-using grandparents and friend, he decided to do something to counteract the mystery of accessibility. Collaborating with Mayor Brindle, the Downtown Westfield Corporation, and college freshman Sarah Maher, he conducted surveys and interviewed over 130 businesses in Westfield. He then worked alongside high school junior Ethan Lung to develop a user-friendly app for iOS and Android.
+       </Text>
+       <Text style={styles.paragraph}>
+         This app allows users to explore ratings and key accessibility details of local businesses. The app is currently organized in multiple categories and in an A to Z order within each category, but we hope to implement a search bar soon. The future vision includes expanding to other towns globally and reaching as many users as possible. Thank you for joining us on our mission to enhance accessibility for everyone.
+       </Text>
+     </View>
 
-      <View style={styles.textBox}>
-        <Text style={styles.subHeader}>Krishav Singla</Text>
-        <Text style={styles.role}>App Developer / Information Researcher</Text>
-        <Text style={styles.info}>
-          Krishav attends Union County Magnet High School and is a senior. He is passionate about making a positive impact through technology.
-        </Text>
-      </View>
 
-      <View style={styles.textBox}>
-        <Text style={styles.subHeader}>Ethan Lung</Text>
-        <Text style={styles.role}>App Developer / App Designer</Text>
-        <Text style={styles.info}>
-          Ethan is a junior at the Union County Vocational Technical School. With a creative mind, he focuses on creating a beneficial impact by designing and developing mobile apps.
-        </Text>
-      </View>
+     <View style={styles.textBox}>
+       <Text style={styles.subHeader}>Krishav Singla</Text>
+       <Text style={styles.role}>App Founder and Developer</Text>
+       <Text style={styles.info}>
+         Krishav is a senior at the Union County Magnet High School. After venturing through downtown Westfield with his grandfather, he saw from a different lens how inaccessible some of the vibrant restaurants or relaxing spas were. While he didn’t think twice about a couple of steps in front of the entrance, it changed the whole landscape for his grandfather. He was inspired to pursue Access Wayfinder after talking to other seniors and veterans who struggle with accessibility, and wanted to make the world a better place for them.
+       </Text>
+     </View>
+
+
+     <View style={styles.textBox}>
+       <Text style={styles.subHeader}>Ethan Lung</Text>
+       <Text style={styles.role}>App Developer and Designer</Text>
+       <Text style={styles.info}>
+       Ethan is a junior at the Union County Vocational Technical School. With a creative mind, he focuses on creating a beneficial impact by designing and developing mobile apps. Ever since he was a young child, Ethan wanted to make sure that everyone was given a fair chance at enjoying life. He believed that seniors, veterans, or people with disabilities should be able to live without worrying about accessibility barriers. So, when the idea of Access Wayfinder came up, Ethan undoubtly decided to use his previous computer science knowledge to co-collaborate on the app, to make accessibility available for everyone.
+       </Text>
+     </View>
+     <View style={styles.textBox}>
+       <Text style={styles.subHeader}>Sarah Maher</Text>
+       <Text style={styles.role}>App Outreach and Accessibility Reviewer</Text>
+       <Text style={styles.info}>
+       Sarah is a college freshman at Pomona College in California who grew up in Westfield. Having been born with a disability, she is very aware of the accessibility challenges that people like her face on a day-to-day basis. When presented with the idea for Access Wayfinder, she eagerly agreed to help make this a reality so that the downtown she loves can be more accessible to everyone who visits.
+       </Text>
+     </View>
+     
+
 
       {/* Button to navigate back */}
-      <TouchableOpacity
-        style={styles.button}
-        onPress={navigateBack}
-      >
-        <Text style={styles.buttonText}>Go Back</Text>
-      </TouchableOpacity>
+      
     </ScrollView>
   );
 };
@@ -61,11 +80,34 @@ const styles = StyleSheet.create({
     justifyContent: 'center',
     alignItems: 'center',
     paddingHorizontal: 20,
-    paddingBottom: 60,  // Increased padding at the bottom to accommodate the button
+    paddingBottom: 60,
     backgroundColor: '#fff',
+  },
+  arrowButton: {
+    position: 'absolute',
+    top: 60,
+    left: 20,
+    
+    zIndex: 1,
+  },
+  arrowText: {
+    color: '#000',
+    fontSize: 20,
+  },
+  arrowContainer: {
+    padding: 20,
+  },
+  circle: {
+    width: 50,
+    height: 50,
+    borderRadius: 15,
+    backgroundColor: '#87bfd7',
+    alignItems: 'center',
+    justifyContent: 'center',
   },
   header: {
     fontSize: 30,
+    marginTop: 60,
     fontWeight: 'bold',
     marginBottom: 15,
     color: '#000',
@@ -91,7 +133,7 @@ const styles = StyleSheet.create({
   },
   role: {
     textAlign: 'center',
-    color: '#87bfd7',  // Stand out color
+    color: '#87bfd7',
     fontWeight: 'bold',
   },
   info: {
